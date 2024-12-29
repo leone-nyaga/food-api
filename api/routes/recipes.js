@@ -99,15 +99,24 @@ router.put('/:id', (req, res) => {
   res.json(recipes[recipeIndex]);  // 7
 });
 
+/* route to delete */
 router.delete('/:id', (req, res) => {
   const recipes = readFoodFile();
-  const filteredRecipes = recipes.filter((r) => r.id !== parseInt(req.params.id));
-  if (recipes.length === filteredRecipes.length) {
+  
+  /* Find the recipe to delete */
+  const recipeToDelete = recipes.find((r) => r.id === parseInt(req.params.id));
+  
+  if (!recipeToDelete) {
     return res.status(404).json({ error: 'Recipe not found' });
   }
 
+  /* Filter out the deleted recipe */
+  const filteredRecipes = recipes.filter((r) => r.id !== parseInt(req.params.id));
+  
   writeFoodFile(filteredRecipes);
-  res.json({ message: 'Recipe deleted successfully', recipe: deletedRecipe });
+
+  /* Return the deleted recipe in the response */
+  res.json({ message: 'Recipe deleted successfully', recipe: recipeToDelete });
 });
 
 module.exports = router;
