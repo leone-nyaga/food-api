@@ -23,5 +23,37 @@
     "category": "main course",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/ugali.jpg",
     "youtube video": "https://www.youtube.com/watch?v=X8FLJhZ85Hw"
+  },
+  {
+    "id": 2,
+    "name": "chapati",
+    "ingredients": [
+      "wheat flour",
+      "boiled water",
+      "medium sized carrots",
+      "salt",
+      "cooking oil"
+    ],
+    "instructions": [
+      "Heat 2 cups water add salt to taste to the water. Grate your carrots using the smaller part of your grater.",
+      "Add the grated carrots to your warm salty water, Pour the flour into a basin create a hole in the flour, Pour in the warm water with carrots bit by bit to the hole and knead inwards. Knead till it forms a sticky firm dough.",
+      "Add 35mls cooking oil and continue kneading till oil is well incorporated into the dough.",
+      "Cover your dough with a clean piece of cloth for at least 30mins, As you prepare your source of heat and working surface",
+      "For your chapatis to be in layers when cooked, you have to make dough balls which you'll use to roll your dough to circular small shapes.",
+      "Spread flour on your working surface.",
+      "Spread your dough on top of the flour.",
+      "Make a big circle dough.",
+      "Spread 2 tablespoon on top of the dough and spread evenly.",
+      "Cut the dough into small strips",
+      "Role each strip to make a roll.",
+      "Place each roll aside, ensuring that they don't get in touch with each other.",
+      "Cover your rolls with a clean piece of cloth. Let it rest for 10mins",
+      "Bring roll to your preheated pan. Cook both sides. Add 1 tablespoon of oil to the top part of your chapati and spread evenly. Turn and do the same to the other part. Cook your chapatis under moderate heat so that they don't burn.",
+      "Till the last one, Ensure you have a serviet placed on the surface of your storage place to prevent the chapatis from being wet from the moisture. Cover up with a lid so they don't dry.",
+      "serve hot with some nice stew."
+    ],
+    "category": "main course",
+    "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/chapati.jpg",
+    "youtube video": "https://www.youtube.com/watch?v=awFwcEx8wUM"
   }
 ]
