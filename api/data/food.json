@@ -21,6 +21,7 @@
       "Serve the ugali whole or slice. Enjoy with your favorite stew, meat, veggies, fish etc."
     ],
     "category": "main course",
+    "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/ugali.jpg",
     "youtube video": "https://www.youtube.com/watch?v=X8FLJhZ85Hw"
   }
 ]
