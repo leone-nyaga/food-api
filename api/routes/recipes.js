@@ -36,29 +36,24 @@ router.get('/:id', (req, res) => {
   if (!recipe) {
     return res.status(404).json({ error: 'Recipe not found' });
   }
-  res.json(recipes);
+  res.json(recipe);
 });
 
 /* get recipe by category or name */
 router.get('/search', (req, res) => {
   const { name, category } = req.query;
   const recipes = readFoodFile();
-  let filteredRecipes = recipes;
 
-  if (name) {
-    filteredRecipes = filteredRecipes.filter((r) => 
-      r.name.toLowerCase().includes(name.toLowerCase())
-    );
-  }
-
-  if (category) {
-    filteredRecipes = filteredRecipes.filter((r) => 
-      r.category.toLowerCase() === category.toLowerCase()
-    );
-  }
+  /* Apply filtering with OR logic */
+  const filteredRecipes = recipes.filter((r) => {
+    const matchesName = name ? r.name.toLowerCase().includes(name.toLowerCase()) : true;
+    const matchesCategory = category ? r.category.toLowerCase() === category.toLowerCase() : true;
+    return matchesName || matchesCategory; // Recipe matches if either condition is true
+  });
 
   res.json(filteredRecipes);
 });
+
 
 /* post request to add recipes 
  * validates the fields a client needs to send in the post request
@@ -71,8 +66,10 @@ router.post('/', (req, res) => {
     return res.status(400).json({ error: 'Name, ingredients, instructions, and category are required fields.' });
   }
 
+  const newId = recipes.length > 0 ? Math.max(...recipes.map(r => r.id)) + 1 : 1;
+
   const newRecipe = {
-    id: recipes.length + 1,
+    id: newId,
     name,
     ingredients,
     instructions,
@@ -110,7 +107,7 @@ router.delete('/:id', (req, res) => {
   }
 
   writeFoodFile(filteredRecipes);
-  res.json({ message: 'Recipe deleted successfully' });
+  res.json({ message: 'Recipe deleted successfully', recipe: deletedRecipe });
 });
 
 module.exports = router;
