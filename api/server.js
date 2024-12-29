@@ -10,7 +10,14 @@ app.use(express.json());
 /* Routes */
 app.use('/recipes', recipesRoutes);
 
-/* Start the server */
-app.listen(PORT, () => {
-console.log(`Server is running on http://localhost:${PORT}`);
-});
+/* Start the server
+ * the "if (process.env.NODE_ENV !== 'test')" ensures that the server only starts 
+ * when you're not in the test environment.
+ */
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
