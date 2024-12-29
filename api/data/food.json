@@ -22,7 +22,7 @@
     ],
     "category": "main course",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/ugali.jpg",
-    "youtube video": "https://www.youtube.com/watch?v=X8FLJhZ85Hw"
+    "youtube": "https://www.youtube.com/watch?v=X8FLJhZ85Hw"
   },
   {
     "id": 2,
@@ -54,7 +54,7 @@
     ],
     "category": "main course",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/chapati.jpg",
-    "youtube video": "https://www.youtube.com/watch?v=awFwcEx8wUM"
+    "youtube": "https://www.youtube.com/watch?v=awFwcEx8wUM"
   },
   {
     "id": 3,
@@ -73,7 +73,7 @@
     ],
     "category": "bevarage",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/kenyan-tea.jpg",
-    "youtube video": "https://www.youtube.com/watch?v=atI7i28RI4o"
+    "youtube": "https://www.youtube.com/watch?v=atI7i28RI4o"
   },
   {
     "id": 4,
@@ -97,7 +97,7 @@
     ],
     "category": "pastries",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/mandazi1.jpg",
-    "youtube video": "https://www.youtube.com/watch?v=qJ1OEXABXrU"
+    "youtube": "https://www.youtube.com/watch?v=qJ1OEXABXrU"
   },
   {
     "id": 5,
@@ -122,9 +122,9 @@
       "Let it rest for 4mins as you pre heat your pan. Spread small amounts of cooking oil. Pour your mixture and let it spread in the pan to form a circular shape. Cook both sides.",
       "Cover your cooked pancakes so that they remain soft. Do not use alot of cooking oil.",
       "Once ready, Roll each pancake. Sprinkle natural honey on top. And enjoy your breakfast."
-    ]
+    ],
     "category": "breakfast",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/pancake.jpg",
-    "youtube video": "https://www.youtube.com/watch?v=SnvYjB5eTdc"
+    "youtube": "https://www.youtube.com/watch?v=SnvYjB5eTdc"
   }
 ]
