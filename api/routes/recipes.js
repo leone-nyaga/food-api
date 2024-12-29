@@ -60,3 +60,29 @@ router.get('/search', (req, res) => {
   res.json(filteredRecipes);
 });
 
+/* post request to add recipes */
+router.post('/', (req, res) => {
+  const recipes = readFoodFile();
+  const { name, ingredients, instructions, category, image, youtube } = req.body;
+  
+  if (!name || !ingredients || !instructions || !category) {
+    return res.status(400).json({ error: 'Name, ingredients, instructions, and category are required fields.' });
+  }
+
+  const newRecipe = {
+    id: recipes.length + 1,
+    name,
+    ingredients,
+    instructions,
+    category,
+    image,
+    youtube
+  };
+
+  recipes.push(newRecipe);
+
+  writeFoodFile(recipes);
+
+  res.status(201).json(newRecipe);
+});
+
