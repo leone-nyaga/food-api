@@ -4,7 +4,7 @@ const recipesRoutes = require('./routes/recipes');
 const app = express();
 const PORT = 3000;
 
-
+/* middleware that parses json data */
 app.use(express.json());
 
 /* Routes */
