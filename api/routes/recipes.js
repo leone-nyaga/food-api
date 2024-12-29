@@ -60,7 +60,9 @@ router.get('/search', (req, res) => {
   res.json(filteredRecipes);
 });
 
-/* post request to add recipes */
+/* post request to add recipes 
+ * validates the fields a client needs to send in the post request
+ */
 router.post('/', (req, res) => {
   const recipes = readFoodFile();
   const { name, ingredients, instructions, category, image, youtube } = req.body;
@@ -79,10 +81,36 @@ router.post('/', (req, res) => {
     youtube
   };
 
+  /* data is included in the recipe array */
   recipes.push(newRecipe);
-
+  /* the data is the pushed to the food.json file */
   writeFoodFile(recipes);
-
+  /* send status code if successfully added */
   res.status(201).json(newRecipe);
 });
 
+/* put route to update existing recipe */
+router.put('/:id', (req, res) => {
+  const recipes = readFoodFile();  // 1
+  const recipeIndex = recipes.findIndex((r) => r.id === parseInt(req.params.id));  // 2
+  if (recipeIndex === -1) {  // 3
+    return res.status(404).json({ error: 'Recipe not found' });  // 4
+  }
+
+  recipes[recipeIndex] = { ...recipes[recipeIndex], ...req.body };  // 5
+  writeFoodFile(recipes);  // 6
+  res.json(recipes[recipeIndex]);  // 7
+});
+
+router.delete('/:id', (req, res) => {
+  const recipes = readFoodFile();
+  const filteredRecipes = recipes.filter((r) => r.id !== parseInt(req.params.id));
+  if (recipes.length === filteredRecipes.length) {
+    return res.status(404).json({ error: 'Recipe not found' });
+  }
+
+  writeFoodFile(filteredRecipes);
+  res.json({ message: 'Recipe deleted successfully' });
+});
+
+module.exports = router;
