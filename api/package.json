@@ -1,7 +1,7 @@
 {
-  "name": "api",
+  "name": "Leone Nyaga",
   "version": "1.0.0",
-  "description": "",
+  "description": "A kenyan food api",
   "main": "index.js",
   "dependencies": {
     "express": "^4.21.2"
