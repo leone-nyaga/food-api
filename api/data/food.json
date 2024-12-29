@@ -55,5 +55,24 @@
     "category": "main course",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/chapati.jpg",
     "youtube video": "https://www.youtube.com/watch?v=awFwcEx8wUM"
+  },
+  {
+    "id": 3,
+    "name": "kenyan tea",
+    "ingredients": [
+      "milk",
+      "water",
+      "tea leaves",
+      "sugar"
+    ],
+    "instructions": [
+      "Boil water in a saucepan.",
+      "Add sugar and tea powder in it and boil it for 3- 4 minutes on medium flame.",
+      "Add milk and boil it over medium flame for 6-7 minutes or until bubbles start to rise. You will see the change in color of tea from milky shade to brown shade when it is ready.",
+      "Turn off the gas and strain tea in cups."
+    ],
+    "category": "bevarage",
+    "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/kenyan-tea.jpg",
+    "youtube video": "https://www.youtube.com/watch?v=atI7i28RI4o"
   }
 ]
