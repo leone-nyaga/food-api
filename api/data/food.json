@@ -74,5 +74,57 @@
     "category": "bevarage",
     "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/kenyan-tea.jpg",
     "youtube video": "https://www.youtube.com/watch?v=atI7i28RI4o"
+  },
+  {
+    "id": 4,
+    "name": "mandazi",
+    "ingredients": [
+      "wheat flour",
+      "baking powder",
+      "milk",
+      "margarine",
+      "lemon zest",
+      "cooking oil",
+      "sugar"
+    ],
+    "instructions": [
+      "Mix the dry ingredients. Add the milk slowly while kneading.",
+      "Knead well and let it rest overnight. I normally make my dough after sapa. And let it rest covers overnight.",
+      "The next morning. Slightly knead the dough to mix it. Put oil in a frying and heat. Roll and cut into desired shapes",
+      "Dip the desired shapes into the cooking oil, turn when brown.",
+      "Continue with the remaining pieces.",
+      "Serve hot with desired beverage."
+    ],
+    "category": "pastries",
+    "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/mandazi1.jpg",
+    "youtube video": "https://www.youtube.com/watch?v=qJ1OEXABXrU"
+  },
+  {
+    "id": 5,
+    "name": "pancakes",
+    "ingredients": [
+      "wheat flour",
+      "baking powder",
+      "milk",
+      "margerine",
+      "sugar",
+      "eggs",
+      "water",
+      "cooking oil"
+    ],
+    "instructions": [
+      "Sieve wheat flour into a bowl.",
+      "Add half tablespoon baking powder to the flour.",
+      "Sieve sugar to your flour. Mix all the dry ingredients together. Melt 1 teaspoon Margarine.",
+      "In a separate bowl whisk egg. Add milk to the whisked egg.",
+      "Create a well in the four. Add the whisked egg and milk mixture to the flour and whisk gently bringing flour to the inside till it forms a thin consistency.",
+      "Add your melted Margarine to the mixture and stir to mix.",
+      "Let it rest for 4mins as you pre heat your pan. Spread small amounts of cooking oil. Pour your mixture and let it spread in the pan to form a circular shape. Cook both sides.",
+      "Cover your cooked pancakes so that they remain soft. Do not use alot of cooking oil.",
+      "Once ready, Roll each pancake. Sprinkle natural honey on top. And enjoy your breakfast."
+    ]
+    "category": "breakfast",
+    "image": "https://github.com/leone-nyaga/food-api/blob/master/api/static/pancake.jpg",
+    "youtube video": "https://www.youtube.com/watch?v=SnvYjB5eTdc"
   }
 ]
