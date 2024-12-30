@@ -57,5 +57,5 @@ curl -X GET http://localhost:3000/api/recipes/1
 Example Request:
 
 ```bash
-curl -X GET "http://localhost:3000/api/recipes/search?name=Pasta&category=Dinner"
+curl -X GET "http://localhost:3000/api/recipes/search?name=chapati&category=bevarage"
 ```
