@@ -23,7 +23,7 @@ This is a Kenyan food RESTapi that fetches data from a food.json file.
 Example Request:
 
 ```bash
-curl -X GET http://localhost:3000/api/recipes
+curl -X GET http://localhost:3000/recipes
 ```
 
 2. Get Recipe by ID
@@ -40,7 +40,7 @@ curl -X GET http://localhost:3000/api/recipes
 Example Request:
 
 ```bash
-curl -X GET http://localhost:3000/api/recipes/1
+curl -X GET http://localhost:3000/recipes/1
 ```
 
 3. Search Recipes by Name or Category
@@ -57,7 +57,7 @@ curl -X GET http://localhost:3000/api/recipes/1
 Example Request:
 
 ```bash
-curl -X GET "http://localhost:3000/api/recipes/search?name=chapati&category=bevarage"
+curl -X GET "http://localhost:3000/recipes/search?name=chapati"
 ```
 
 4. Add a New Recipe
@@ -76,7 +76,7 @@ curl -X GET "http://localhost:3000/api/recipes/search?name=chapati&category=beva
   + Body: The created recipe object.
 Example Request:
 ```bash
-curl -X POST http://localhost:3000/api/recipes \
+curl -X POST http://localhost:3000/recipes \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Spaghetti Bolognese",
@@ -108,7 +108,7 @@ curl -X POST http://localhost:3000/api/recipes \
 + Example Request:
 
 ```bash
-curl -X PUT http://localhost:3000/api/recipes/1 \
+curl -X PUT http://localhost:3000/recipes/1 \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Updated Spaghetti Bolognese",
@@ -131,5 +131,5 @@ curl -X PUT http://localhost:3000/api/recipes/1 \
 
 + Example Request:
 ```bash
-curl -X DELETE http://localhost:3000/api/recipes/1
+curl -X DELETE http://localhost:3000/recipes/1
 ```
