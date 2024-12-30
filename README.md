@@ -133,3 +133,29 @@ curl -X PUT http://localhost:3000/recipes/1 \
 ```bash
 curl -X DELETE http://localhost:3000/recipes/1
 ```
+
+## HOW TO RUN
+
+1. Clone the repository to your terminal
+
+```bash
+git clone https://github.com/leone-nyaga/food-api.git
+```
+
+2. Navigate to the **api** directory
+
+```bash
+cd api
+```
+
+3. Install the dependencies when you have the **package.json** file
+
+```bash
+npm install
+```
+
+4. Run the final command
+
+```bash
+npm run dev
+```
