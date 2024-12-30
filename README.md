@@ -117,3 +117,19 @@ curl -X PUT http://localhost:3000/api/recipes/1 \
     "category": "Dinner"
   }'
 ```
+
+6. Delete a Recipe
+
++ Endpoint: DELETE /:id
++ Description: Deletes a recipe by its ID.
++ Parameters:
+  + id: The ID of the recipe (integer).
++ Response:
+  + Status: 200 OK
+  + Body: A message confirming the deletion and the deleted recipe object.
+  + Status: 404 Not Found (if recipe with specified ID does not exist)
+
++ Example Request:
+```bash
+curl -X DELETE http://localhost:3000/api/recipes/1
+```
